@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app_api.views import register_user, login_user
+from rest_framework.routers import DefaultRouter
+from app_api.views import GenreView, MovieView
+
+router = DefaultRouter(trailing_slash=False)
+router.register(r'genres', GenreView, 'box')
+router.register(r'movies', MovieView, 'movie')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
