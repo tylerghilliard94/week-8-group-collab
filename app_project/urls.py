@@ -18,6 +18,7 @@ from django.urls import path
 from app_api.views import register_user, login_user
 from rest_framework.routers import DefaultRouter
 from app_api.views import GenreView, MovieView
+from django.conf.urls import include
 
 router = DefaultRouter(trailing_slash=False)
 router.register(r'genres', GenreView, 'box')
@@ -27,4 +28,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register', register_user),
     path('login', login_user),
+    path('', include(router.urls))
 ]

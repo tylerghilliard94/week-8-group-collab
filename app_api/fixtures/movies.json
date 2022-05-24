@@ -1,0 +1,26 @@
+[
+    {
+        "model": "app_api.movie",
+        "pk": 1,
+        "fields": {
+            "title": "Elf",
+            "description": "Elf does Manhattan",
+            "run_time": 90,
+            "user": 1,
+            "date_released": "2003-01-01",
+            "genre": 1
+        }
+    },
+    {
+        "model": "app_api.movie",
+        "pk": 2,
+        "fields": {
+            "title": "Elf 2",
+            "description": "Elf does Manhattan again",
+            "run_time": 200,
+            "user": 2,
+            "date_released": "2008-01-01",
+            "genre": 2
+        }
+    }
+]

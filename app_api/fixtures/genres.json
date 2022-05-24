@@ -1,0 +1,16 @@
+[
+    {
+        "model": "app_api.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Christmas"
+        }
+    },
+    {
+        "model": "app_api.genre",
+        "pk": 2,
+        "fields": {
+            "name": "Horror"
+        }
+    }
+]
