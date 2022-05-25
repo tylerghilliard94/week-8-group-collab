@@ -1,0 +1,26 @@
+[
+    {
+        "model": "app_api.movie",
+        "pk": 3,
+        "fields": {
+            "title": "Shrek",
+            "description": "Ogre man? falls in love",
+            "run_time": 92,
+            "user": 1,
+            "date_released": "2000-06-06",
+            "genre": 3
+        }
+    },
+    {
+        "model": "app_api.movie",
+        "pk": 4,
+        "fields": {
+            "title": "Shrek 2",
+            "description": "Ogre man? falls in love again?",
+            "run_time": 120,
+            "user": 2,
+            "date_released": "2004-06-06",
+            "genre": 4
+        }
+    }
+]
