@@ -12,3 +12,14 @@ class Movie(models.Model):
     date_released = models.DateField(default=date.today())
     genre = models.ForeignKey(
         "Genre", on_delete=models.CASCADE, related_name="movies")
+
+    @property
+    def watched(self):
+        return self.__watched
+
+    @watched.setter
+    def watched(self, value):
+        if value == 2 and self.genre.name == "Horror":
+            self.__watched = True
+        else:
+            self.__watched = False
